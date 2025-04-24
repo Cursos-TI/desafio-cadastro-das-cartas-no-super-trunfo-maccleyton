@@ -1,0 +1,28 @@
+//Dados para teste do desafio (ano de referência: 2021)
+
+Cidade 1: //(Bonito-MS)
+Estado: M;
+Código: M01;
+Nome da Cidade: Bonito;
+População: 22,401;
+Área: 5,378.939 km²;
+PIB: 1,204,313,000.00;
+Número de Pontos Turisticos: 38; //(fonte: https://www.acquaviagens.com.br/)
+Densidade Demográfica: 4.16 hab/km²;
+PIB per Capita: 53,761.57 reais;
+
+Cidade 2: //(Fortaleza-CE)
+Estado: C;
+Código: C01;
+Nome da Cidade: Fortaleza;
+População: 2,703,391 ;
+Área: 312.353 km²;
+PIB: 73,436,128,000.00;
+Número de Pontos Turisticos: 20; //(fonte: https://www.civitatis.com/)
+Densidade Populacional: 8.654,92 hab/km²;
+PIB per Capita: 27,164.45;
+
+Fontes consultadas
+População 2021 - https://sidra.ibge.gov.br/tabela/6579
+PIB 2021 - https://sidra.ibge.gov.br/tabela/5938
+Demais dados: https://cidades.ibge.gov.br/

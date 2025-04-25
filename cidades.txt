@@ -26,3 +26,17 @@ Fontes consultadas
 População 2021 - https://sidra.ibge.gov.br/tabela/6579
 PIB 2021 - https://sidra.ibge.gov.br/tabela/5938
 Demais dados: https://cidades.ibge.gov.br/
+
+
+Exemplo de Saída (após a entrada dos dados):
+
+ 
+
+Comparação de Cartas:
+População: Carta 1 venceu (1)
+Área: Carta 1 venceu (1)
+PIB: Carta 1 venceu (1)
+Pontos Turísticos: Carta 1 venceu (1)
+Densidade Populacional: Carta 2 venceu (0)
+PIB per Capita: Carta 1 venceu (1)
+Super Poder: Carta 1 venceu (1)

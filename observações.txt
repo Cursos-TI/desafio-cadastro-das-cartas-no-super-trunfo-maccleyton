@@ -1,0 +1,9 @@
+    /*
+    Realizei uma pequena adequação no comando de exibição do código da carta
+    O usuário precisará apenas digitar o sequencial da cidade (01, 02 etc)
+    O código está configurado para buscar e exibir a letra do Estado + o código da carta (ex: A01)
+    Abaixo a demonstração de como ficou o comando de exibição
+    printf("Código: %c%s\n", estado1, codCarta1);
+    O PIB solicita a entrada em milhares devido a precisão, e como é solicitado que usamos float
+    Ajustei a formula do PIB per Capita para ficar próximo ao real
+    */

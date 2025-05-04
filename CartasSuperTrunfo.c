@@ -20,3 +20,32 @@ int main() {
 
     return 0;
 }
+
+
+/*Estrutura de decisão aninhada
+if () {
+    printf("Carta 1 venceu!");
+} else if {
+    printf("Carta 2 venceu!");
+} else {
+    printf("Houve empate!");
+}
+
+Exibição do Resultado: Mostrar na tela, de forma clara, o resultado da comparação, incluindo:
+
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f (milhares) reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
+
+
+
+
+O nome dos dois países.
+O atributo usado na comparação.
+Os valores do atributo para cada carta.
+Qual carta venceu.
+Em caso de empate, exibir a mensagem "Empate!".
+*/

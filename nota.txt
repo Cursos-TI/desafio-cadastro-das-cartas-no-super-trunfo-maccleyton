@@ -1,0 +1,30 @@
+Teste do código, após o resultado abaixo mudei a metodologia de calculo do vencedor
+pois neste teste, no atributo 1 houve empate, no atributo 2 a carta 1 venceu, porém no resultado final
+a carta 2 venceu por ter um somatório maior, injusto, já que não teve nenhuma vitoria isolada
+
+Comparando Área Territorial entre Atlanta e Boston
+Atributo: Área Territorial
+Atlanta: 1500.00 km²
+Boston: 1500.00 km²
+Empate!
+
+Comparando Densidade Demográfica entre Atlanta e Boston
+Atributo: Densidade Demográfica
+Atlanta: 10.00 hab/km²
+Boston: 23.33 hab/km²
+Vencedor: Carta 1 (Atlanta)
+
+=== Resultado da Rodada ===
+Atlanta vs Boston
+
+Atributo 1: Área
+Atlanta: 1500 | Boston: 1500
+
+Atributo 2: Densidade Demográfica
+Atlanta: 10 | Boston: 23
+
+Soma dos atributos:
+Atlanta: 1510
+Boston: 1523
+
+Boston venceu a rodada!

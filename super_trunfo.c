@@ -9,7 +9,7 @@ int main() {
     float pibPerCapita1, pibPerCapita2, superPoder1, superPoder2;
 
     // Definindo as variáveis dos atributos selecionados e resultados
-    int opcao, atributo1, atributo2, soma1, soma2; // Implementação de menu com o uso de switch
+    int opcao, atributo1, atributo2, soma1, soma2, pontos1 = 0, pontos2 = 0; // Implementação de menu
     float valor1_atrib1 = 0, valor2_atrib1 = 0, valor1_atrib2 = 0, valor2_atrib2 = 0;
 
     // Solicitando os dados da primeira cidade
@@ -121,6 +121,8 @@ int main() {
                     printf("%s: %d habitantes\n", cidade1, populacao1);
                     printf("%s: %d habitantes\n", cidade2, populacao2);
                     
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -131,7 +133,9 @@ int main() {
                     printf("Atributo: Área Territorial\n");
                     printf("%s: %.2f km²\n", cidade1, area1);
                     printf("%s: %.2f km²\n", cidade2, area2);
-                                
+                     
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -143,6 +147,8 @@ int main() {
                     printf("%s: %.2f (milhares) reais\n", cidade1, pib1);
                     printf("%s: %.2f (milhares) reais\n", cidade2, pib2);
                                 
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                     (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                      printf("Empate!\n"));
@@ -154,6 +160,8 @@ int main() {
                     printf("%s: %d pontos turísticos\n", cidade1, pontosTuristicos1);
                     printf("%s: %d pontos turísticos\n", cidade2, pontosTuristicos2);
                                 
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                     (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                      printf("Empate!\n"));
@@ -164,7 +172,9 @@ int main() {
                     printf("Atributo: Densidade Demográfica\n");
                     printf("%s: %.2f hab/km²\n", cidade1, densidade1);
                     printf("%s: %.2f hab/km²\n", cidade2, densidade2);
-                                
+                    
+                    pontos1 += (valor1_atrib1 < valor2_atrib1) ? 3 : (valor1_atrib1 > valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 < valor1_atrib1) ? 3 : (valor2_atrib1 > valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                     (valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                      printf("Empate!\n"));
@@ -176,6 +186,8 @@ int main() {
                     printf("%s: %.2f \n", cidade1, pibPerCapita1);
                     printf("%s: %.2f \n", cidade2, pibPerCapita2);
                                 
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                     (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                      printf("Empate!\n"));
@@ -187,6 +199,8 @@ int main() {
                     printf("%s: %.2f \n", cidade1, superPoder1);
                     printf("%s: %.2f \n", cidade2, superPoder2);
                                 
+                    pontos1 += (valor1_atrib1 > valor2_atrib1) ? 3 : (valor1_atrib1 < valor2_atrib1 ? 0 : 1);
+                    pontos2 += (valor2_atrib1 > valor1_atrib1) ? 3 : (valor2_atrib1 < valor1_atrib1 ? 0 : 1);   
                     valor1_atrib1 > valor2_atrib1 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib1 < valor2_atrib1 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -205,6 +219,8 @@ int main() {
                     printf("%s: %d habitantes\n", cidade1, populacao1);
                     printf("%s: %d habitantes\n", cidade2, populacao2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -216,6 +232,8 @@ int main() {
                     printf("%s: %.2f km²\n", cidade1, area1);
                     printf("%s: %.2f km²\n", cidade2, area2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -227,6 +245,8 @@ int main() {
                     printf("%s: %.2f (milhares) reais\n", cidade1, pib1);
                     printf("%s: %.2f (milhares) reais\n", cidade2, pib2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -238,6 +258,8 @@ int main() {
                     printf("%s: %d pontos turísticos\n", cidade1, pontosTuristicos1);
                     printf("%s: %d pontos turísticos\n", cidade2, pontosTuristicos2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -249,6 +271,8 @@ int main() {
                     printf("%s: %.2f hab/km²\n", cidade1, densidade1);
                     printf("%s: %.2f hab/km²\n", cidade2, densidade2);
                                 
+                    pontos1 += (valor1_atrib2 < valor2_atrib2) ? 3 : (valor1_atrib2 > valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 < valor1_atrib2) ? 3 : (valor2_atrib2 > valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -260,6 +284,8 @@ int main() {
                     printf("%s: %.2f \n", cidade1, pibPerCapita1);
                     printf("%s: %.2f \n", cidade2, pibPerCapita2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -271,6 +297,8 @@ int main() {
                     printf("%s: %.2f \n", cidade1, superPoder1);
                     printf("%s: %.2f \n", cidade2, superPoder2);
                                 
+                    pontos1 += (valor1_atrib2 > valor2_atrib2) ? 3 : (valor1_atrib2 < valor2_atrib2 ? 0 : 1);
+                    pontos2 += (valor2_atrib2 > valor1_atrib2) ? 3 : (valor2_atrib2 < valor1_atrib2 ? 0 : 1);
                     valor1_atrib2 > valor2_atrib2 ? printf("Vencedor: Carta 1 (%s)\n", cidade1) :
                      (valor1_atrib2 < valor2_atrib2 ? printf("Vencedor: Carta 2 (%s)\n", cidade2) :
                       printf("Empate!\n"));
@@ -281,52 +309,23 @@ int main() {
                 }
             }
 
-            // Soma dos atributos
-            soma1 = valor1_atrib1 + valor1_atrib2;
-            soma2 = valor2_atrib1 + valor2_atrib2;
-
-            // Exibe tudo bonitão
+            // Resultado final da rodada
             printf("\n=== Resultado da Rodada ===\n");
-            printf("%s vs %s\n", cidade1, cidade2);
+            printf("%s vs %s\n\n", cidade1, cidade2);
 
-            // Exibe Atributo 1
-            printf("\nAtributo 1: ");
-            switch (atributo1) {
-                case 1: printf("População\n"); break;
-                case 2: printf("Área\n"); break;
-                case 3: printf("PIB\n"); break;
-                case 4: printf("Pontos Turísticos\n"); break;
-                case 5: printf("Densidade Demográfica\n"); break;
-                case 6: printf("PIB per Capita\n"); break;
-                case 7: printf("Super Poder\n"); break;
-            }
-            printf("%s: %d | %s: %d\n", cidade1, valor1_atrib1, cidade2, valor2_atrib1);
+            printf("Atributo 1: %.2f | %.2f\n", valor1_atrib1, valor2_atrib1);
+            printf("Atributo 2: %.2f | %.2f\n\n", valor1_atrib2, valor2_atrib2);
 
-            // Exibe Atributo 2
-            printf("\nAtributo 2: ");
-            switch (atributo2) {
-                case 1: printf("População\n"); break;
-                case 2: printf("Área\n"); break;
-                case 3: printf("PIB\n"); break;
-                case 4: printf("Pontos Turísticos\n"); break;
-                case 5: printf("Densidade Demográfica\n"); break;
-                case 6: printf("PIB per Capita\n"); break;
-                case 7: printf("Super Poder\n"); break;
-            }
-            printf("%s: %d | %s: %d\n", cidade1, valor1_atrib2, cidade2, valor2_atrib2);
+            printf("Pontos:\n");
+            printf("%s: %d\n", cidade1, pontos1);
+            printf("%s: %d\n\n", cidade2, pontos2);
 
-            // Exibe somas
-            printf("\nSoma dos atributos:\n");
-            printf("%s: %d\n", cidade1, soma1);
-            printf("%s: %d\n", cidade2, soma2);
-
-            // Verifica vencedor (considera Densidade invertida nos individuais? NÃO precisa, pq o critério final é a soma simples — o professor não falou que a soma precisa ser invertida)
-            if (soma1 > soma2) {
-                printf("\n%s venceu a rodada!\n", cidade1);
-            } else if (soma2 > soma1) {
-                printf("\n%s venceu a rodada!\n", cidade2);
+            if (pontos1 > pontos2) {
+                printf("%s venceu a rodada!\n", cidade1);
+            } else if (pontos2 > pontos1) {
+                printf("%s venceu a rodada!\n", cidade2);
             } else {
-                printf("\nEmpate!\n");
+                printf("Empate na rodada!\n");
             }
 
             return 0;
